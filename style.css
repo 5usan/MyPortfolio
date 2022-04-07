@@ -1,0 +1,137 @@
+:root {
+  --primary-dark: rgb(193, 193, 193);
+  --text-color: rgb(118, 118, 118);
+  --btn-color: rgb(201, 201, 201);
+  --odd-comp: rgb(250, 250, 250);
+  --even-comp: rgb(245, 245, 245);
+  --nav-logo: rgb(129, 116, 192);
+  --nav-list: rgb(121, 118, 139);
+  --name: rgb(17, 8, 67);
+  --para: rgb(87, 86, 88);
+  --headerBackground: rgb(116, 98, 224);
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contain {
+  width: 80%;
+  margin: 0 10%;
+}
+
+header {
+  height: 700px;
+  background-image: url("./assets/images/profile/profile.png");
+  background-repeat: no-repeat;
+  background-position: 60% 104%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+nav {
+  height: 60px;
+  position: fixed;
+  background-color: white;
+}
+
+.navLogo {
+  color: var(--nav-logo);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.navList {
+  color: var(--nav-list);
+}
+
+.headerContain{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.name {
+  color: var(--name);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.contactBtn {
+  padding: 10px 20px;
+  background-color: var(--headerBackground);
+  border: none;
+}
+
+.background{
+    height: 850px;
+    width: 850px;
+    background-color: var(--headerBackground);
+    position: absolute;
+    top: 140px;
+    right: -100px;
+    z-index: -1;
+}
+
+.workRelated {
+  font-size: 30px;
+  font-weight: bold;
+  height: 120px;
+  color: var(--name);
+}
+
+.project {
+  min-height: 450px;
+  padding: 10px;
+}
+
+.projectHeading {
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--name);
+}
+
+.logoContent {
+  height: 250px;
+}
+.projectLogo {
+  width: 60%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--btn-color);
+  font-weight: bold;
+}
+
+p {
+  color: var(--para);
+  font-weight: bold;
+  text-align: justify;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--btn-color);
+}
+
+.onHover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.oddCompStyle {
+  background-color: var(--odd-comp);
+}
+
+.evenCompStyle {
+  background-color: var(--even-comp);
+}
+
+button{
+    color: var(--btn-color);
+    font-weight: bold;
+}
