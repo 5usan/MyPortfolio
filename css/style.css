@@ -1,0 +1,171 @@
+:root {
+  --primary-dark: rgb(193, 193, 193);
+  --text-color: rgb(118, 118, 118);
+  --btn-color: rgb(201, 201, 201);
+  --odd-comp: rgb(250, 250, 250);
+  --even-comp: rgb(245, 245, 245);
+  --nav-logo: rgb(129, 116, 192);
+  --nav-list: rgb(121, 118, 139);
+  --name: rgb(17, 8, 67);
+  --para: rgb(87, 86, 88);
+  --headerBackground: rgb(116, 98, 224);
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contain {
+  width: 80%;
+  margin: 0 10%;
+}
+
+header {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 361px) {
+  header {
+    background-image: url("../assets/images/profile/profile.png");
+    background-repeat: no-repeat;
+    background-position: 60% 104%;
+  }
+}
+
+nav {
+  height: 5vh;
+  position: fixed;
+  background-color: white;
+}
+
+.navLogo {
+  color: var(--nav-logo);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.navList {
+  color: var(--nav-list);
+}
+
+.headerContain {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5vh;
+  height: 95vh;
+}
+
+.name {
+  color: var(--name);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.contactBtn {
+  padding: 10px 20px;
+  background-color: var(--headerBackground);
+  border: none;
+}
+
+.background {
+  height: 850px;
+  width: 850px;
+  background-color: var(--headerBackground);
+  position: absolute;
+  top: 350px;
+  right: -100px;
+  z-index: -1;
+}
+
+.workRelated {
+  font-size: 30px;
+  font-weight: bold;
+  height: 120px;
+  color: var(--name);
+}
+
+.project {
+  height: 450px;
+  padding: 10px;
+}
+
+.projectHeading {
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--name);
+}
+
+.logoContent {
+  height: 250px;
+}
+
+.projectLogo {
+  width: 60%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--btn-color);
+  font-weight: bold;
+}
+
+p,
+label {
+  color: var(--para);
+  font-weight: bold;
+  text-align: justify;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--btn-color);
+}
+
+.onHover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.onHover {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.oddCompStyle {
+  background-color: var(--odd-comp);
+}
+
+.evenCompStyle {
+  background-color: var(--even-comp);
+}
+
+button {
+  color: var(--btn-color);
+  font-weight: bold;
+}
+
+.formRelated {
+  background-color: var(--odd-comp);
+}
+
+input {
+  padding: 7px;
+}
+
+footer {
+  background-color: black;
+  font-size: 18px;
+  height: 50px;
+}
+
+.infoContact {
+  background: var(--headerBackground);
+}
+
+/*# sourceMappingURL=style.css.map */

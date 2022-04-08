@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass css/style.scss css/style.css --watch",
+    "start": " npm run sass"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,8 @@
     "scripts": {
       "pre-push": "surge --project ./ --domain https://susanofolio.surge.sh/"
     }
+  },
+  "dependencies": {
+    "concurrently": "^7.1.0"
   }
 }

@@ -11,6 +11,22 @@
   --headerBackground: rgb(116, 98, 224);
 }
 
+$mobile-width: 361px;
+
+// clamping paragaraph
+@mixin clamper($lines-to-clamp) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines-to-clamp;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
 * {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -23,11 +39,13 @@
 
 header {
   height: 100vh;
-  background-image: url("./assets/images/profile/profile.png");
-  background-repeat: no-repeat;
-  background-position: 60% 104%;
   overflow: hidden;
   position: relative;
+  @include mobile {
+    background-image: url("../assets/images/profile/profile.png");
+    background-repeat: no-repeat;
+    background-position: 60% 104%;
+  }
 }
 
 nav {
@@ -127,10 +145,11 @@ a:hover {
 }
 
 .onHover {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  @include clamper(3) // display: -webkit-box;
+    // -webkit-line-clamp: 3;
+    // -webkit-box-orient: vertical;
+    // overflow: hidden;
+;
 }
 
 .oddCompStyle {
@@ -158,4 +177,16 @@ footer {
   background-color: black;
   font-size: 18px;
   height: 50px;
+}
+
+.infoContact{
+  background: var(--headerBackground);
+}
+
+@media only screen and (min-width: 361px) {
+  // header {
+  //   background-image: url("../assets/images/profile/profile.png");
+  //   background-repeat: no-repeat;
+  //   background-position: 60% 104%;
+  // }
 }
