@@ -28,13 +28,13 @@
             <ul class="m-0 d-flex justify-content-end navList">
               <li class="mx-4"><a href="#">Service</a></li>
               <li class="mx-4"><a href="#work">Works</a></li>
-              <li class="mx-4"><a href="#">Contact</a></li>
+              <li class="mx-4"><a href="#contact">Contact</a></li>
               <li class="mx-4"><a href="#" onclick="toggle()">Toggle</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="row align-items-center h-75 headerContain">
+      <div class="row align-items-center headerContain">
         <div class="col-lg-4 col-md-4 col-sm-6">
           <h1 class="name">SUSAN</h1>
           <h2 class="name">SHRESTHA</h2>
@@ -58,7 +58,7 @@
           <div
             class="p-3 rounded-3 border project d-flex flex-column align-items-center onHover oddCompStyle"
           >
-            <h3 class="projectHeading">VACCINE REGISTRATION SYSTEM</h3>
+            <h3 class="projectHeading">HAMRO VACCINE</h3>
             <div
               class="logoContent d-flex align-items-center justify-content-center"
             >
@@ -125,6 +125,58 @@
         </div>
       </div>
     </section>
+    <section class="contain mb-4" id="contact">
+      <div class="workRelated d-flex align-items-center justify-content-center">
+        <h2>CONTACT ME</h2>
+      </div>
+      <div class="formRelated p-4">
+        <form action="">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-4 d-flex flex-column my-2">
+              <label for="firstName" class="mb-2">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="col-lg-4 d-flex flex-column my-2">
+              <label for="lastName" class="mb-2">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="col-lg-8 d-flex flex-column my-2">
+              <label for="email" class="mb-2">E-mail</label>
+              <input type="email" id="email" placeholder="E-mail" required />
+            </div>
+            <div class="col-lg-8 d-flex flex-column my-2">
+              <label for="description" class="mb-2">Description</label>
+              <textarea
+                id="description"
+                rows="4"
+                cols="50"
+                placeholder="Description"
+                required
+              ></textarea>
+              <div class="col-lg-12 my-2 d-flex justify-content-end">
+                <button class="btn btn-outline-secondary mx-3" type="reset">
+                  Reset
+                </button>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="d-flex justify-content-center align-items-center">
+      <p class="m-0">@copyright, 2022</p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
